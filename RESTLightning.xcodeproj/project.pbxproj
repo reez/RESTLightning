@@ -132,13 +132,13 @@
 			isa = PBXGroup;
 			children = (
 				AE54D7C821DF00A400A6055B /* RESTLightningFramework.h */,
-				AE54D7D321DF00BF00A6055B /* Environment.swift */,
 				AE54D7DE21DF02E600A6055B /* NavigationViewController.swift */,
 				AE54D7E021DF02F400A6055B /* NavigationViewController.storyboard */,
 				AE54D7E221DF036500A6055B /* AddNodeViewController.swift */,
 				AE54D7E421DF037200A6055B /* AddNodeViewController.storyboard */,
 				AE54D7E621DF03C000A6055B /* ViewNodeViewController.swift */,
 				AE54D7E821DF03CC00A6055B /* ViewNodeViewController.storyboard */,
+				AE54D7D321DF00BF00A6055B /* Environment.swift */,
 				AE54D7D521DF00DF00A6055B /* Extensions.swift */,
 				AE54D7D721DF010000A6055B /* FreeFunctions.swift */,
 				AE54D7D921DF011800A6055B /* Models.swift */,

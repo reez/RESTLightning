@@ -8,10 +8,12 @@
 
 import UIKit
 
-class NavigationViewController: UIViewController {
+public class NavigationViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .lightGray
         
         let resultSavedGet = Current.lightningSaved.fetchSaved()
         switch resultSavedGet {
@@ -29,7 +31,6 @@ class NavigationViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-            
         }
         
     }
