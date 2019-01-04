@@ -20,6 +20,12 @@
 		AE54D7D821DF010000A6055B /* FreeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7D721DF010000A6055B /* FreeFunctions.swift */; };
 		AE54D7DA21DF011800A6055B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7D921DF011800A6055B /* Models.swift */; };
 		AE54D7DC21DF012A00A6055B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7DB21DF012A00A6055B /* ViewModel.swift */; };
+		AE54D7DF21DF02E600A6055B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7DE21DF02E600A6055B /* NavigationViewController.swift */; };
+		AE54D7E121DF02F400A6055B /* NavigationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE54D7E021DF02F400A6055B /* NavigationViewController.storyboard */; };
+		AE54D7E321DF036500A6055B /* AddNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7E221DF036500A6055B /* AddNodeViewController.swift */; };
+		AE54D7E521DF037200A6055B /* AddNodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE54D7E421DF037200A6055B /* AddNodeViewController.storyboard */; };
+		AE54D7E721DF03C000A6055B /* ViewNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7E621DF03C000A6055B /* ViewNodeViewController.swift */; };
+		AE54D7E921DF03CC00A6055B /* ViewNodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE54D7E821DF03CC00A6055B /* ViewNodeViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,13 @@
 		AE54D7D721DF010000A6055B /* FreeFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFunctions.swift; sourceTree = "<group>"; };
 		AE54D7D921DF011800A6055B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		AE54D7DB21DF012A00A6055B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AE54D7DD21DF028700A6055B /* RESTLightning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RESTLightning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AE54D7DE21DF02E600A6055B /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		AE54D7E021DF02F400A6055B /* NavigationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationViewController.storyboard; sourceTree = "<group>"; };
+		AE54D7E221DF036500A6055B /* AddNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNodeViewController.swift; sourceTree = "<group>"; };
+		AE54D7E421DF037200A6055B /* AddNodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNodeViewController.storyboard; sourceTree = "<group>"; };
+		AE54D7E621DF03C000A6055B /* ViewNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNodeViewController.swift; sourceTree = "<group>"; };
+		AE54D7E821DF03CC00A6055B /* ViewNodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewNodeViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,7 @@
 		AE54D7A321DF009300A6055B = {
 			isa = PBXGroup;
 			children = (
+				AE54D7DD21DF028700A6055B /* RESTLightning.playground */,
 				AE54D7AE21DF009300A6055B /* RESTLightning */,
 				AE54D7C721DF00A400A6055B /* RESTLightningFramework */,
 				AE54D7AD21DF009300A6055B /* Products */,
@@ -119,6 +133,12 @@
 			children = (
 				AE54D7C821DF00A400A6055B /* RESTLightningFramework.h */,
 				AE54D7D321DF00BF00A6055B /* Environment.swift */,
+				AE54D7DE21DF02E600A6055B /* NavigationViewController.swift */,
+				AE54D7E021DF02F400A6055B /* NavigationViewController.storyboard */,
+				AE54D7E221DF036500A6055B /* AddNodeViewController.swift */,
+				AE54D7E421DF037200A6055B /* AddNodeViewController.storyboard */,
+				AE54D7E621DF03C000A6055B /* ViewNodeViewController.swift */,
+				AE54D7E821DF03CC00A6055B /* ViewNodeViewController.storyboard */,
 				AE54D7D521DF00DF00A6055B /* Extensions.swift */,
 				AE54D7D721DF010000A6055B /* FreeFunctions.swift */,
 				AE54D7D921DF011800A6055B /* Models.swift */,
@@ -232,6 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE54D7E521DF037200A6055B /* AddNodeViewController.storyboard in Resources */,
+				AE54D7E921DF03CC00A6055B /* ViewNodeViewController.storyboard in Resources */,
+				AE54D7E121DF02F400A6055B /* NavigationViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,11 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE54D7DF21DF02E600A6055B /* NavigationViewController.swift in Sources */,
 				AE54D7DC21DF012A00A6055B /* ViewModel.swift in Sources */,
 				AE54D7D421DF00BF00A6055B /* Environment.swift in Sources */,
 				AE54D7D821DF010000A6055B /* FreeFunctions.swift in Sources */,
 				AE54D7D621DF00DF00A6055B /* Extensions.swift in Sources */,
 				AE54D7DA21DF011800A6055B /* Models.swift in Sources */,
+				AE54D7E321DF036500A6055B /* AddNodeViewController.swift in Sources */,
+				AE54D7E721DF03C000A6055B /* ViewNodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
