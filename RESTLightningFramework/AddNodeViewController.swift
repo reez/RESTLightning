@@ -13,19 +13,6 @@ public class AddNodeViewController: UIViewController {
     var remoteRESTConfiguration = RemoteRESTConfiguration(certificate: nil, macaroon: nil, url: nil)
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
     
-//    let rootStackView = UIStackView()
-//    let titleLabel = UILabel()
-//    let macaroonStackView = UIStackView()
-//    let certificateStackView = UIStackView()
-//    let uriStackView = UIStackView()
-//    let macaroonLabel = UILabel()
-//    let certificateLabel = UILabel()
-//    let uriLabel = UILabel()
-//    let macaroonTextField = UITextField()
-//    let certificateTextField = UITextField()
-//    let uriTextField = UITextField()
-//    let submitButton = UIButton()
-    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var certificateLabel: UILabel!
     @IBOutlet var certificateTextField: UITextField!
@@ -36,9 +23,6 @@ public class AddNodeViewController: UIViewController {
     @IBOutlet var uriLabel: UILabel!
     @IBOutlet var uriTextField: UITextField!
     @IBOutlet var submitButton: UIButton!
-    
-    
-    
     
     override public func viewDidLoad() {
         super.viewDidLoad()
