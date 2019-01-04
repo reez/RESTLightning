@@ -13,18 +13,31 @@ public class AddNodeViewController: UIViewController {
     var remoteRESTConfiguration = RemoteRESTConfiguration(certificate: nil, macaroon: nil, url: nil)
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
     
-    let rootStackView = UIStackView()
-    let titleLabel = UILabel()
-    let macaroonStackView = UIStackView()
-    let certificateStackView = UIStackView()
-    let uriStackView = UIStackView()
-    let macaroonLabel = UILabel()
-    let certificateLabel = UILabel()
-    let uriLabel = UILabel()
-    let macaroonTextField = UITextField()
-    let certificateTextField = UITextField()
-    let uriTextField = UITextField()
-    let submitButton = UIButton()
+//    let rootStackView = UIStackView()
+//    let titleLabel = UILabel()
+//    let macaroonStackView = UIStackView()
+//    let certificateStackView = UIStackView()
+//    let uriStackView = UIStackView()
+//    let macaroonLabel = UILabel()
+//    let certificateLabel = UILabel()
+//    let uriLabel = UILabel()
+//    let macaroonTextField = UITextField()
+//    let certificateTextField = UITextField()
+//    let uriTextField = UITextField()
+//    let submitButton = UIButton()
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var certificateLabel: UILabel!
+    @IBOutlet var certificateTextField: UITextField!
+    
+    @IBOutlet var macaroonLabel: UILabel!
+    @IBOutlet var macaroonTextField: UITextField!
+    
+    @IBOutlet var uriLabel: UILabel!
+    @IBOutlet var uriTextField: UITextField!
+    @IBOutlet var submitButton: UIButton!
+    
+    
     
     
     override public func viewDidLoad() {
@@ -101,55 +114,29 @@ extension AddNodeViewController:  UITextFieldDelegate {
 
 extension AddNodeViewController {
     public func setupView() {
+        
         self.activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         self.activityIndicator.center = view.center
         self.view.addSubview(activityIndicator)
         self.view.bringSubviewToFront(activityIndicator)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
-        self.rootStackView.axis = .vertical
-        self.rootStackView.translatesAutoresizingMaskIntoConstraints = false
-        self.rootStackView.spacing = 24
-        self.rootStackView.layoutMargins = self.traitCollection.horizontalSizeClass == .regular
-            ? .init(top: 36, left: 36, bottom: 36, right: 36)
-            : .init(top: 16, left: 16, bottom: 16, right: 16)
-        self.rootStackView.isLayoutMarginsRelativeArrangement = true
-        self.view.addSubview(self.rootStackView)
-        
         self.titleLabel.text = "Add Node"
         self.titleLabel.textAlignment = .center
         self.titleLabel.font = UIFont.preferredFont(forTextStyle: .title3, compatibleWith: self.traitCollection)
         self.titleLabel.textColor = UIColor.init(white: 0.2, alpha: 1)
-        self.rootStackView.addArrangedSubview(self.titleLabel)
         
         self.certificateLabel.text = "Cert"
         self.certificateLabel.font = UIFont.preferredFont(forTextStyle: .caption1, compatibleWith: self.traitCollection)
         self.certificateTextField.borderStyle = .roundedRect
-        self.certificateStackView.axis = .vertical
-        self.certificateStackView.spacing = 16
-        self.rootStackView.addArrangedSubview(certificateStackView)
-        self.certificateStackView.addArrangedSubview(certificateLabel)
-        self.certificateStackView.addArrangedSubview(certificateTextField)
-
         
         self.macaroonLabel.text = "Macaroon"
         self.macaroonLabel.font = UIFont.preferredFont(forTextStyle: .caption1, compatibleWith: self.traitCollection)
         self.macaroonTextField.borderStyle = .roundedRect
-        self.macaroonStackView.axis = .vertical
-        self.macaroonStackView.spacing = 16
-        self.rootStackView.addArrangedSubview(macaroonStackView)
-        self.macaroonStackView.addArrangedSubview(macaroonLabel)
-        self.macaroonStackView.addArrangedSubview(macaroonTextField)
-
         
         self.uriLabel.text = "IP URL"
         self.uriLabel.font = UIFont.preferredFont(forTextStyle: .caption1, compatibleWith: self.traitCollection)
         self.uriTextField.borderStyle = .roundedRect
-        self.uriStackView.axis = .vertical
-        self.uriStackView.spacing = 16
-        self.rootStackView.addArrangedSubview(uriStackView)
-        self.uriStackView.addArrangedSubview(uriLabel)
-        self.uriStackView.addArrangedSubview(uriTextField)
         
         self.submitButton.setTitle("Submit", for: .normal)
         self.submitButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .callout, compatibleWith: self.traitCollection)
@@ -158,17 +145,7 @@ extension AddNodeViewController {
         self.submitButton.layer.cornerRadius = 6
         self.submitButton.layer.masksToBounds = true
         submitButton.addTarget(self, action: #selector(AddNodeViewController.submitButtonPressed), for: .touchUpInside)
-        self.rootStackView.addSubview(self.submitButton)
-        
-        NSLayoutConstraint.activate([
-            self.rootStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            self.rootStackView.trailingAnchor.constraint(equalTo: self.rootStackView.trailingAnchor),
-            self.rootStackView.topAnchor.constraint(equalTo: self.rootStackView.topAnchor),
-            self.rootStackView.bottomAnchor.constraint(equalTo: self.rootStackView.bottomAnchor),
-            
-            ])
 
-        
     }
     
 }
