@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE50E15F21F39AA100191196 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE50E15E21F39AA000191196 /* README.md */; };
 		AE54D7B021DF009300A6055B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7AF21DF009300A6055B /* AppDelegate.swift */; };
 		AE54D7B221DF009300A6055B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE54D7B121DF009300A6055B /* ViewController.swift */; };
 		AE54D7B521DF009300A6055B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE54D7B321DF009300A6055B /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE50E15E21F39AA000191196 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AE54D7AC21DF009300A6055B /* RESTLightning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RESTLightning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE54D7AF21DF009300A6055B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE54D7B121DF009300A6055B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		AE54D7A321DF009300A6055B = {
 			isa = PBXGroup;
 			children = (
+				AE50E15E21F39AA000191196 /* README.md */,
 				AE54D7DD21DF028700A6055B /* RESTLightning.playground */,
 				AE54D7AE21DF009300A6055B /* RESTLightning */,
 				AE54D7C721DF00A400A6055B /* RESTLightningFramework */,
@@ -244,6 +247,7 @@
 			files = (
 				AE54D7BA21DF009400A6055B /* LaunchScreen.storyboard in Resources */,
 				AE54D7B721DF009400A6055B /* Assets.xcassets in Resources */,
+				AE50E15F21F39AA100191196 /* README.md in Resources */,
 				AE54D7B521DF009300A6055B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

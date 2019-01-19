@@ -79,7 +79,6 @@ public class AddNodeViewController: UIViewController {
         }
     }
 
-
 }
 
 extension AddNodeViewController: URLSessionDelegate {
@@ -129,7 +128,6 @@ extension AddNodeViewController {
         self.submitButton.layer.cornerRadius = 6
         self.submitButton.layer.masksToBounds = true
         submitButton.addTarget(self, action: #selector(AddNodeViewController.submitButtonPressed), for: .touchUpInside)
-
     }
     
 }

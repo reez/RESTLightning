@@ -18,22 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Node Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-eJ-FXl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-eJ-FXl">
                                 <rect key="frame" x="16" y="20" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Getting Info..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNb-yP-eqL">
-                                <rect key="frame" x="16" y="49" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Info..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNb-yP-eqL">
+                                <rect key="frame" x="16" y="49" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cNb-yP-eqL" firstAttribute="leading" secondItem="j9R-uU-4Yu" secondAttribute="leading" constant="16" id="BHW-UI-JEg"/>
+                            <constraint firstItem="BHU-eJ-FXl" firstAttribute="top" secondItem="j9R-uU-4Yu" secondAttribute="top" id="Lle-gb-D0Z"/>
+                            <constraint firstItem="cNb-yP-eqL" firstAttribute="top" secondItem="BHU-eJ-FXl" secondAttribute="bottom" constant="8" id="V2n-cQ-aiD"/>
+                            <constraint firstItem="j9R-uU-4Yu" firstAttribute="trailing" secondItem="cNb-yP-eqL" secondAttribute="trailing" constant="16" id="j7X-IL-ZUR"/>
+                            <constraint firstItem="BHU-eJ-FXl" firstAttribute="leading" secondItem="j9R-uU-4Yu" secondAttribute="leading" constant="16" id="syj-4E-T3X"/>
+                            <constraint firstItem="j9R-uU-4Yu" firstAttribute="trailing" secondItem="BHU-eJ-FXl" secondAttribute="trailing" constant="16" id="zPk-el-qXB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j9R-uU-4Yu"/>
                     </view>
                     <connections>

@@ -24,9 +24,6 @@ func dataTaskPost<T: Decodable>(invoiceRequest: InvoiceRequest, path: String, co
     request.setValue(configuration?.macaroon, forHTTPHeaderField: "Grpc-Metadata-macaroon")
     request.httpMethod = "POST"
     
-    // Make this input
-    //    let postData = InvoiceRequest.init(memo: "thurs", value: "45")
-    //    print("Post info: \(postData)")
     let postData = invoiceRequest
     guard let data = try? JSONEncoder().encode(postData) else { return }
     request.httpBody = data
@@ -165,5 +162,3 @@ public func postSaveValue(config: RemoteRESTConfiguration) -> ResultSavedPost<St
     UserDefaults.standard.set(data, forKey: "Remote")
     return ResultSavedPost.success("Saved Value to Defaults!")
 }
-
-

@@ -1,7 +1,5 @@
-//: [Previous](@previous)
+@testable import RESTLightningFramework
+import PlaygroundSupport
 
-import Foundation
+Current = .mock
 
-var str = "Hello, playground"
-
-//: [Next](@next)

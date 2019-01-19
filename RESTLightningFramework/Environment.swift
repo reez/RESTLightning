@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 // =======================================
 //
 //             Environment
@@ -107,5 +106,3 @@ extension Environment {
         lightningPosted: .mock
     )
 }
-
-//Current = .mock

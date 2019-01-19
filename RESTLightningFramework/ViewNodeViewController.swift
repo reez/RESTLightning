@@ -71,7 +71,6 @@ public class ViewNodeViewController: UIViewController {
         
     }
     
-
 }
 
 extension ViewNodeViewController:  URLSessionDelegate {

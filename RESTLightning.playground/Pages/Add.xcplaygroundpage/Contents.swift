@@ -2,7 +2,6 @@
 import PlaygroundSupport
 
 Current = .mock
-//     return ResultSavedPost.failure(DataError.remoteNodeInfoMissing)
 
 let bundle = Bundle(for: AddNodeViewController.self)
 let storyboard = UIStoryboard(name: "AddNodeViewController", bundle: bundle)
